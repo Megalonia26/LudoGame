@@ -1,24 +1,20 @@
-"""This file handle the players pos and all
-
 """
-# import pygame
+    This module handle the player's position and the 
+"""
+import pygame
 import const
 
 class Pieces:
+    """Handling pieces
     """
-    Handling pieces
-    """
-    def __init__(self, players):
-        """for parameter I'll user the players, colors
-        """
-        self.p1 = players[0]
-        self.p2 = players[1]
-        if len(players) > 2:
-            self.p3 = players[2]
-            self.p4 = players[3]
-        self.p_colors = list(zip(range(len(players)), const.COLORS))
-
-    def Players(self):
-        """Maybe to handle the player's pieces/color
-        """
-        return self.p_colors
+    def __init__(self, players):      
+        self.player_colors = {
+            "Player 1": "red",
+            "Player 2": "green",
+            "Player 3": "yellow",
+            "Player 4": "blue",
+        }
+        
+        self.pieces = {
+            "Player 1": [pygame.R]
+        }
